@@ -14,8 +14,8 @@ import List from './formats/list';
 
 import { BackgroundClass, BackgroundStyle } from './formats/background';
 import { ColorClass, ColorStyle } from './formats/color';
-import { FontClass, FontStyle } from './formats/font';
-import { SizeClass, SizeStyle } from './formats/size';
+// import { FontClass, FontStyle } from './formats/font';
+// import { SizeClass, SizeStyle } from './formats/size';
 
 import Bold from './formats/bold';
 import Italic from './formats/italic';
@@ -25,10 +25,11 @@ import Strike from './formats/strike';
 import Underline from './formats/underline';
 
 import Formula from './formats/formula';
-import Image from './formats/image';
+// import Image from './formats/image';
 import Video from './formats/video';
 
-import CodeBlock, { Code as InlineCode } from './formats/code';
+// import CodeBlock, { Code as InlineCode } from './formats/code';
+import CodeBlock from './formats/code';
 
 import Syntax from './modules/syntax';
 import Table from './modules/table';
@@ -40,7 +41,7 @@ import ColorPicker from './ui/color-picker';
 import IconPicker from './ui/icon-picker';
 import Tooltip from './ui/tooltip';
 
-import BubbleTheme from './themes/bubble';
+// import BubbleTheme from './themes/bubble';
 import SnowTheme from './themes/snow';
 
 Quill.register(
@@ -51,8 +52,8 @@ Quill.register(
     'attributors/class/background': BackgroundClass,
     'attributors/class/color': ColorClass,
     'attributors/class/direction': DirectionClass,
-    'attributors/class/font': FontClass,
-    'attributors/class/size': SizeClass,
+    // 'attributors/class/font': FontClass,
+    // 'attributors/class/size': SizeClass,
 
     'attributors/style/align': AlignStyle,
     'attributors/style/background': BackgroundStyle,
@@ -72,8 +73,8 @@ Quill.register(
 
     'formats/background': BackgroundStyle,
     'formats/color': ColorStyle,
-    'formats/font': FontClass,
-    'formats/size': SizeClass,
+    // 'formats/font': FontClass,
+    // 'formats/size': SizeClass,
 
     'formats/blockquote': Blockquote,
     'formats/code-block': CodeBlock,
@@ -81,7 +82,7 @@ Quill.register(
     'formats/list': List,
 
     'formats/bold': Bold,
-    'formats/code': InlineCode,
+    // 'formats/code': InlineCode,
     'formats/italic': Italic,
     'formats/link': Link,
     'formats/script': Script,
@@ -89,14 +90,14 @@ Quill.register(
     'formats/underline': Underline,
 
     'formats/formula': Formula,
-    'formats/image': Image,
+    // 'formats/image': Image,
     'formats/video': Video,
 
     'modules/syntax': Syntax,
     'modules/table': Table,
     'modules/toolbar': Toolbar,
 
-    'themes/bubble': BubbleTheme,
+    // 'themes/bubble': BubbleTheme,
     'themes/snow': SnowTheme,
 
     'ui/icons': Icons,
